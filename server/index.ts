@@ -4,6 +4,7 @@ import next, { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
 
 import { Server } from "socket.io";
 import { v4 } from "uuid";
+import { } from '../common/types/global';
 
 const port = parseInt(process.env.PORT || "3000", 10);
 const dev = process.env.NODE_ENV !== "production";

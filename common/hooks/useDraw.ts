@@ -16,7 +16,7 @@ export const useDraw = (
             ctx.lineWidth = options.lineWidth;
             ctx.strokeStyle = options.lineColor;
         }
-    });
+    }, [ctx, options.lineColor, options.lineWidth]);
 
     const handleStartDrawing = (x: number, y: number) => {
         if (!ctx) return;
