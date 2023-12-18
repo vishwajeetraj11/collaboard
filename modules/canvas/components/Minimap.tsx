@@ -56,6 +56,7 @@ const MiniMap = forwardRef<HTMLCanvasElement, PropsType>(
           dragElastic={0}
           dragTransition={{ power: 0, timeConstant: 0 }}
           onDragEnd={() => setMovedMinimap((prev) => !prev)}
+          onDragStart={() => setMovedMinimap((prev) => !prev)}
           className="absolute top-0 left-0 cursor-grab border-2 border-red-500"
           style={{
             width: width / 10,
